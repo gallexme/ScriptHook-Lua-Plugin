@@ -1,8 +1,4 @@
-unsigned long *p1 = new unsigned long[8096 * 2 + 2];
-p1[0] = 8096;
-    returnTable(tolua_S, p1, tolua_ret);
-
-	static int tolua_natives_PED_GET_PED_NEARBY_VEHICLES00(lua_State* tolua_S)
+static int tolua_natives_PED_GET_PED_NEARBY_VEHICLES00(lua_State* tolua_S)
 {
 #ifndef TOLUA_RELEASE
 	tolua_Error tolua_err;

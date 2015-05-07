@@ -12,14 +12,12 @@ const char* FunctionToRun = "";
 int get_key_pressed(lua_State *l)
 {
 	int key = lua_tointeger(l, 1);
-	//return (GetKeyState(nVirtKey) & 0x8000) != 0;
 	lua_pushboolean(l, (GetAsyncKeyState(key) & 0x8000) != 0);
 	return 1;
 }
 int wait(lua_State *l)
 {
 	int key = lua_tointeger(l, 1);
-	//return (GetKeyState(nVirtKey) & 0x8000) != 0;
 	scriptWait(key);
 	return 1;
 }
@@ -90,7 +88,7 @@ lua_State * generateLuaState() {
 void initializeLua(lua_State *lua_state) {
 	// create new Lua state
 	long lastPressedReload = 0;
-	printf("Loaded main.lua");
+	printf("Loaded main.lua\n");
 	try {
 		while (true) {
 #ifdef SDK
