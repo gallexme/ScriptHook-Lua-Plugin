@@ -5,7 +5,7 @@
 #include "enums.h"
 #include <string>
 #include "main.h"
- class GTA5CoopMod : public Singleton<GTA5CoopMod>
+ class LuaPlugin : public Singleton<LuaPlugin>
 {
 public:
 	void initialize();

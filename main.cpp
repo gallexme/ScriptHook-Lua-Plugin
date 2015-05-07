@@ -1,9 +1,9 @@
 #include <windows.h>
 
-#include "GTA5CoopMod.h"
+#include "LuaPLugin.h"
 HMODULE Instance;
 void  ScriptMain() {
-	GTA5CoopMod::GetInstance()->initialize();
+	LuaPlugin::GetInstance()->initialize();
 }
 BOOL APIENTRY DllMain(HMODULE hInstance, DWORD reason, LPVOID lpReserved)
 {
@@ -15,6 +15,3 @@ BOOL APIENTRY DllMain(HMODULE hInstance, DWORD reason, LPVOID lpReserved)
 	}
 	return TRUE;
 }
-/*int main() {
-	GTA5CoopMod::GetInstance()->initialize();
-}*/

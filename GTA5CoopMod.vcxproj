@@ -198,7 +198,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GTA5CoopMod.cpp" />
+    <ClCompile Include="LuaPlugin.cpp" />
     <ClCompile Include="LUA\lapi.c" />
     <ClCompile Include="LUA\lauxlib.c" />
     <ClCompile Include="LUA\lbaselib.c" />
@@ -245,7 +245,7 @@
     <ClInclude Include="..\inc\nativeCaller.h" />
     <ClInclude Include="..\inc\natives.h" />
     <ClInclude Include="..\inc\types.h" />
-    <ClInclude Include="GTA5CoopMod.h" />
+    <ClInclude Include="LuaPlugin.h" />
     <ClInclude Include="LUA\lapi.h" />
     <ClInclude Include="LUA\lauxlib.h" />
     <ClInclude Include="LUA\lcode.h" />

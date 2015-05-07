@@ -1,4 +1,4 @@
-#include "GTA5CoopMod.h"
+#include "LuaPlugin.h"
 
 #include <ctime>
 #include <vector>
@@ -118,7 +118,7 @@ void initializeLua(lua_State *lua_state) {
 	lua_close(lua_state);
 
 }
-void GTA5CoopMod::initialize()
+void LuaPlugin::initialize()
 {
 #ifdef SDK
 	AllocConsole();
